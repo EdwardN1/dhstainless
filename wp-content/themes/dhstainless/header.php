@@ -119,7 +119,12 @@ window.cookieconsent.initialise({
 
           <div class="header-bottom">
             <div class="container">
-              <a href="<?php bloginfo('url'); ?>"><div class="logo"></div></a>
+                <style>
+                    .header.dark.scrolled .logo img .st1{
+                        fill: filter: invert(29%) sepia(6%) saturate(151%) hue-rotate(47deg) brightness(93%) contrast(95%);
+                    }
+                </style>
+              <a href="<?php bloginfo('url'); ?>"><div class="logo" style="background: none;"><img src="/wp-content/themes/dhstainless/img/new-logo.svg"></div></a>
               <div class="main-nav">
                 <nav>
                   <ul>
