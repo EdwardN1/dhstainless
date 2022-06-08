@@ -12,7 +12,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 copyright">
-          <img src="<?php bloginfo('template_directory'); ?>/img/dhstainless-logo@2x.png" class="footer-logo">
+          <!--<img src="<?php /*bloginfo('template_directory'); */?>/img/dhstainless-logo@2x.png" class="footer-logo">-->
+            <img src="/wp-content/themes/dhstainless/img/new-logo-dark.svg" class="footer-logo">
           <p>Copyright &copy; <?php echo date("Y"); ?> DH Stainless (including DH Press Fit). All Rights Reserved.</p>
 
           <p>Created by <a href="https://www.21digital.agency/">21Digital</a></p>

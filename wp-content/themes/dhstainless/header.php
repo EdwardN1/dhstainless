@@ -2,7 +2,8 @@
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <!--[if IE]>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php wp_title(); ?></title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -12,122 +13,141 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800" rel="stylesheet">
     <!-- <link href="https://file.myfontastic.com/5EJSRQG2uvUpnjTEZWgsJE/icons.css" rel="stylesheet"> -->
 
-    <link rel='shortcut icon' href='<?php bloginfo('url'); ?>/favicon.png' type='image/x-icon' />
+    <link rel='shortcut icon' href='<?php bloginfo('url'); ?>/favicon.png' type='image/x-icon'/>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6747796-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6747796-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-6747796-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#000"
-    },
-    "button": {
-      "background": "#f8be12"
-    }
-  },
-  "content": {
-    "message": "This website uses cookies. To find out more, view our privacy policy.",
-    "link": "View",
-    "href": "https://www.dhstainless.co.uk/privacy-policy/"
-  }
-})});
-</script>
+        gtag('js', new Date());
+
+        gtag('config', 'UA-6747796-1');
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000"
+                    },
+                    "button": {
+                        "background": "#f8be12"
+                    }
+                },
+                "content": {
+                    "message": "This website uses cookies. To find out more, view our privacy policy.",
+                    "link": "View",
+                    "href": "https://www.dhstainless.co.uk/privacy-policy/"
+                }
+            })
+        });
+    </script>
 
 </head>
 
 <body <?php body_class(); ?>>
 
-  <!-- MOBILE MENU -->
+<!-- MOBILE MENU -->
 
-    <div class="mobile-menu">
-      <nav class="container">
+<div class="mobile-menu">
+    <nav class="container">
         <div class="row">
             <ul class="mobile-menu-list">
-              <li><h4><a href="<?php bloginfo('url'); ?>/">Home</a></h4></li>
-              <li>
-                <h4 class="sub-menu"><a href="<?php bloginfo('url'); ?>/products/">Products</a> <i class="icon-chevron-down closed"></i></h4>
-                <?php
-                  $args = array(
-                    'menu' => 'products',
-                    'menu_class' => 'closed',
-                    'container' => '',
-                    'link_before' => '',
-                    'fallback_cb' => false
-                  );
-                  wp_nav_menu( $args );
-                ?>
-              </li>
-              <li>
-                <h4 class="sub-menu"><a href="<?php bloginfo('url'); ?>/sectors/">Sectors</a> <i class="icon-chevron-down closed"></i></h4>
-                <?php
-                  $args = array(
-                    'menu' => 'sectors',
-                    'menu_class' => 'closed',
-                    'container' => '',
-                    'link_before' => '',
-                    'fallback_cb' => false
-                  );
-                  wp_nav_menu( $args );
-                ?>
-              </li>
-              <li>
-                <h4 class="sub-menu"><a href="<?php bloginfo('url'); ?>/about-us">About Us</a> <i class="icon-chevron-down closed"></i></h4>
-                <?php
-                  $args = array(
-                    'menu' => 'help',
-                    'menu_class' => 'closed',
-                    'container' => '',
-                    'link_before' => '',
-                    'fallback_cb' => false
-                  );
-                  wp_nav_menu( $args );
-                ?>
-              </li>
-              <!-- <li><h4><a href="<?php bloginfo('url'); ?>/quote-request">Quote Request</a></h4></li> -->
-              <li><h4><a href="<?php bloginfo('url'); ?>/contact/">Contact</a></h4></li>
-              <!-- <li><h4><a href="#"><div class="icon-icon2 icon"></div>Brochure Request</a></h4></li> -->
+                <li><h4><a href="<?php bloginfo('url'); ?>/">Home</a></h4></li>
+                <li>
+                    <h4 class="sub-menu"><a href="<?php bloginfo('url'); ?>/products/">Products</a> <i class="icon-chevron-down closed"></i></h4>
+                    <?php
+                    $args = array(
+                        'menu' => 'products',
+                        'menu_class' => 'closed',
+                        'container' => '',
+                        'link_before' => '',
+                        'fallback_cb' => false
+                    );
+                    wp_nav_menu($args);
+                    ?>
+                </li>
+                <li>
+                    <h4 class="sub-menu"><a href="<?php bloginfo('url'); ?>/sectors/">Sectors</a> <i class="icon-chevron-down closed"></i></h4>
+                    <?php
+                    $args = array(
+                        'menu' => 'sectors',
+                        'menu_class' => 'closed',
+                        'container' => '',
+                        'link_before' => '',
+                        'fallback_cb' => false
+                    );
+                    wp_nav_menu($args);
+                    ?>
+                </li>
+                <li>
+                    <h4 class="sub-menu"><a href="<?php bloginfo('url'); ?>/about-us">About Us</a> <i class="icon-chevron-down closed"></i></h4>
+                    <?php
+                    $args = array(
+                        'menu' => 'help',
+                        'menu_class' => 'closed',
+                        'container' => '',
+                        'link_before' => '',
+                        'fallback_cb' => false
+                    );
+                    wp_nav_menu($args);
+                    ?>
+                </li>
+                <!-- <li><h4><a href="<?php bloginfo('url'); ?>/quote-request">Quote Request</a></h4></li> -->
+                <li><h4><a href="<?php bloginfo('url'); ?>/contact/">Contact</a></h4></li>
+                <!-- <li><h4><a href="#"><div class="icon-icon2 icon"></div>Brochure Request</a></h4></li> -->
             </ul>
-          </div>
-        </nav>
-      </div>
+        </div>
+    </nav>
+</div>
 
-      <div class="wrapper">
+<div class="wrapper">
 
-      <!-- HEADER -->
+    <!-- HEADER -->
 
-        <div class="header dark">
+    <div class="header dark">
 
-            <div class="mobile-menu-button">
-              <div class="hamburger" id="hamburger">
+        <div class="mobile-menu-button">
+            <div class="hamburger" id="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
-              </div>
-          </div>
+            </div>
+        </div>
 
-          <div class="header-bottom">
+        <div class="header-bottom">
             <div class="container">
                 <style>
-                    .header.dark.scrolled .logo img .st1{
-                        fill: filter: invert(29%) sepia(6%) saturate(151%) hue-rotate(47deg) brightness(93%) contrast(95%);
+                    .header.dark .logo img.light {
+                        display: block;
+                    }
+                    .header.dark.scrolled .logo img.light {
+                        display: none;
+                    }
+                    .header.dark .logo img.dark {
+                        display: none;
+                    }
+                    .header.dark.scrolled .logo img.dark {
+                        display: block;
                     }
                 </style>
-              <a href="<?php bloginfo('url'); ?>"><div class="logo" style="background: none;"><img src="/wp-content/themes/dhstainless/img/new-logo.svg"></div></a>
-              <div class="main-nav">
-                <nav>
-                  <ul>
+                <a href="<?php bloginfo('url'); ?>">
+                    <div class="logo" style="background: none;">
+                        <img src="/wp-content/themes/dhstainless/img/new-logo.svg" class="light">
+                        <img src="/wp-content/themes/dhstainless/img/new-logo-dark.svg" class="dark">
+                    </div>
+                </a>
+                <div class="main-nav">
+                    <nav>
+                        <ul>
                     <span class="hide-xs hide-sm"><li class="has-dropdown"><a href="<?php bloginfo('url'); ?>/products/">Products</a><div class="icon-chevron-down"></div>
                       <div class="dropdown">
                         <div class="container">
@@ -222,22 +242,22 @@ window.cookieconsent.initialise({
                       </div>
                     </li>
 
-                    <!-- <li><a href="<?php bloginfo('url'); ?>/quote-request">Quote Request</a></li> -->
+                        <!-- <li><a href="<?php bloginfo('url'); ?>/quote-request">Quote Request</a></li> -->
                     <li><a href="<?php bloginfo('url'); ?>/contact/">Contact</a></li></span>
-                    <!-- <li class="search-toggle"><a href="#" class="search-click"><div class="icon-search-icon search-icon"></div><div class="close-icon icon-cancel"></div></a></li> -->
-                  </ul>
-                </nav>
-              </div>
+                            <!-- <li class="search-toggle"><a href="#" class="search-click"><div class="icon-search-icon search-icon"></div><div class="close-icon icon-cancel"></div></a></li> -->
+                        </ul>
+                    </nav>
+                </div>
             </div>
-          </div>
-          <div class="search-box">
+        </div>
+        <div class="search-box">
             <div class="container">
-              <form role="search" method="get" id="header-searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                  <div>
-                    <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search', 'placeholder' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-                    <input type="submit" value="" class="search-button" />
-                  </div>
+                <form role="search" method="get" id="header-searchform" action="<?php echo esc_url(home_url('/')); ?>">
+                    <div>
+                        <input type="search" class="search-field" placeholder="<?php echo esc_attr_x('Search', 'placeholder'); ?>" value="<?php echo get_search_query(); ?>" name="s"/>
+                        <input type="submit" value="" class="search-button"/>
+                    </div>
                 </form>
             </div>
-          </div>
         </div>
+    </div>
