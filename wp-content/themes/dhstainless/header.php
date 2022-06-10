@@ -140,7 +140,7 @@
                     }
                 </style>
                 <a href="<?php bloginfo('url'); ?>">
-                    <div class="logo" style="background: none;">
+                    <div class="logo" style="background: none; height: 85px; width: 400px; top: 10px;">
                         <img src="/wp-content/themes/dhstainless/img/new-logo.svg" class="light">
                         <img src="/wp-content/themes/dhstainless/img/new-logo-dark.svg" class="dark">
                     </div>
